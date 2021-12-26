@@ -27,4 +27,12 @@ For Debugging purposes, here's a step-by-step guide on how to install it yoursel
 You can also type in ```debugVerbose``` to trace and debug but that's still not gonna work
 
 And you should be done! Open `boot.py` and if it doesn't work, Retrace the steps to make sure you've done correctly
+# How to open
+Just click ```boot.py``` and you're good! no need to open command prompt and type the filename
+
+# Requirements
+A good PC
+A working Python 3+ intrepeter
+Windows (It has rough compatiblity for linux but still)
+The Files required (all the files in /user, otherwise it will crash)
 
