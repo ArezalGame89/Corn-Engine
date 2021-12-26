@@ -31,8 +31,13 @@ And you should be done! Open `boot.py` and if it doesn't work, Retrace the steps
 Just click ```boot.py``` and you're good! no need to open command prompt and type the filename
 
 # Requirements
+
 A good PC
+
 A working Python 3+ intrepeter
+
 Windows (It has rough compatiblity for linux but still)
+
 The Files required (all the files in /user, otherwise it will crash)
+
 
