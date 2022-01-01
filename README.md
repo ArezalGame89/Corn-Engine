@@ -17,12 +17,17 @@ For Debugging purposes, here's a step-by-step guide on how to install it yoursel
 ![image](https://user-images.githubusercontent.com/86628069/147412314-29edb19a-47b3-4e10-94b9-b17b8ba4c40e.png)
 
 2.Open ```cornname``` and type your username:
-![image](https://user-images.githubusercontent.com/86628069/147412387-e1e066b5-b691-4769-ad35-e6114ce3dc32.png)
+```
+Here you can put your single-line username. make sure it's not empty
+
+
+```
 
 3.Open ```donotlook``` and type in your password:
 
-![image](https://user-images.githubusercontent.com/86628069/147412415-c5160f4f-055e-4a8d-903c-19d39e7feaf6.png)
-
+```Python
+# You can make your password whatever in a single line. CE will NOT read anymore lines
+```
 4.Lastly, open ```info.corndata``` and replace ```0``` with `1`
 You can also type in ```debugVerbose``` to trace and debug but that's still not gonna work
 
