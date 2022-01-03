@@ -1,4 +1,4 @@
-C O R N  E N G I N E
+(There is currently a hard-to-fix bug that after login. it randomly opens the login again, close that window and you should be good to go!)
  
  
 # Corn Engine
