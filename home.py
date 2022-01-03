@@ -1,6 +1,12 @@
+import sys
 import time
 import os
 import socket
+import boot
+import ce_tools
+# import korn
+# import login
+# from tkinter import * 
 from tkinter import filedialog
 
 login_pass = open('user/donotlook') #just in case, this is your password
@@ -17,28 +23,24 @@ print("""
     \|_______|\|_______|\|__|\|__|\|__| \|__|        \|_______|\|__| \|__|\|_______|\|__|\|__| \|__|\|_______|
                                                                                                              
 """)
-if l_n == '':
-	print("Welcome you null'd piece of shit ")
-else: 
-	print("Welcome " + l_n)
+ 
+print("Welcome " + l_n)
 	
-print("Date: " + time.strftime("%m/%d/%y"))
+print("Date: " + ce_tools.date.strftime("%m/%d/%y"))
 print("If you're a beginner, type 'help'")
 
-select = input("python@" + l_n + "> ")
+select = input("python3@" + l_n + "> ")
 
 if select == 'help':
 	print("""
 1 To Open a Virtual Browser
 2 To Open CE Text Editor
 3 To Open File Opener
-4 To Configure and Open BioS
+4 To Configure and Open BIOS
 5 To Open Terminal
 6 To Open The Calculator
 7 To Close with Safety
 	""")
-	input = 'Due to an unpatched bug, This command needs restarting after input'
-	os.startfile('home.py')
 if select == '1':
 	os.startfile('home.py')
 	os.startfile('brows.py')
@@ -53,16 +55,16 @@ if select == '2':
 
 if select == '4':
 	while True:
-		b_login = input(str("Please Enter The Password To " + l_n + " To Open BioS: "))
+		b_login = input(str("Please Enter The Password To " + l_n + " To Open BIOS: "))
 		if b_login == l_p:
-			print("Opening BioS")
+			print("Opening BIOS")
 			host_name = socket.gethostname()
 			host_ip = socket.gethostbyname(host_name)
 			print("[1] USER NAME: " + l_n)
 			print("[2] PASSWORD: " + l_p)
 			print("Hostname:", host_name)
-			print("LOCAL IPS: " + host_ip)
-			edit_b = input("Enter [?] to change setting: ")
+			print("Socket Local IPs: " + host_ip)
+			edit_b = input("Enter number to change setting: ")
 			if edit_b == '1':
 				edit_n = input("Enter New Username: ")
 				with open('user/dataname.pass', 'w') as f:
@@ -82,7 +84,7 @@ if select == '4':
 				os.startfile('home.py')
 				os.system('exit')
 			else:
-				print("Wrong Password To " + l_n)
+				print(ce_tools.WrongPasswordText)
 
 	else:
 		print("Wrong Password To " + l_n)
@@ -101,4 +103,5 @@ if select == '7':
 if select == '3':
 	filepath = filedialog.askopenfilename(initialdir="/",title="Open file",filetypes= (("text files","*.txt"),("all files","*.*")))
 	os.startfile(filepath)
+
 

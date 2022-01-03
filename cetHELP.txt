@@ -1,0 +1,14 @@
+CE_tools is a middle-core for CE. under MIT license
+moreover, it includes some info like the beatles
+If you look at ce_tools-TESTER. You'll see that there's no name file to open this text file
+How you may ask? it imported the 'help' variable which was "cetHELP.txt", this file
+There's also a use in 'dArray' which is the handler for some inputs
+You may saw that it says the ce's version in the tester thats because it also got the version from ce_tools itself
+There's a feature in tools that you can say hello to Python!
+You can also roll a dice!
+Type all these in the ce_tools-TESTER (Case-Sensitive):
+'help' -- leads where you are right now
+'randomNum' -- chooses a number
+'request Hello' -- Say Hello to Python!
+'roll a dice' -- chooses a random number between 1 to 6
+'exit' -- Exits everything

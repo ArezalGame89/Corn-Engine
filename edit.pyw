@@ -3,15 +3,17 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import filedialog
 # my first time using Class
+text_name = "Cornor"
+geometry = "1200x700+201+150"
 class TextEditor:
   # Defining Constructor
   def __init__(self,root):
     # Assigning root
     self.root = root
     # Title of the window
-    self.root.title("Corn Engine's Text Editor")
+    self.root.title(text_name +  " (Text Editor)")
     # Window Geometry
-    self.root.geometry("1200x700+200+150")
+    self.root.geometry(geometry)
     # Initializing filename
     self.filename = None
     # Declaring Title variable

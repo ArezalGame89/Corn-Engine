@@ -27,7 +27,16 @@ while True:
     
     if command == 'exit':
           exit() # bugfix when typing 'exit' does nothing
+    if command == 'helpPy': # Custom-made Help!
+          print('exit - Closes the terminal')
+          print('echo - Repeats whatever shit you saying')
+          print('give-random - Gives a random int value from 0 to 999999')
+          print("helpPy - Brings this message")
+          print("help - Gives a help depending on your platform")
+          print('You can also use the command prompt (or terminal) commands!\nType Help to get stated')
     if command == 'give-random':
           print(random.randint(0, 999999))
+    if command == 'hello':
+            os.openfile("korn.png")
     else:
       os.system(command)

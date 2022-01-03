@@ -2,8 +2,9 @@ import os
 import time
 import random
 with open('user/info.corndata', 'w') as f:
-	f.writelines("1")
 
+
+	f.writelines("1")
 
 
 print("""
