@@ -1,6 +1,11 @@
+CE is currently READ-ONLY for bug reasons, if you have any questions please wait
+
 (There is currently a hard-to-fix bug that after login. it randomly opens the login again, close that window and you should be good to go!)
  
  
+
+
+
 # Corn Engine
 CE is a standalone Framework/Modification/Engine powered by [PyKern](https://github.com/Kiffolisk/pykern) and Completely recoded
 
